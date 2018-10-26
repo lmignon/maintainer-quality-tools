@@ -330,7 +330,7 @@ def main(argv=None):
         if odoo_version == '7.0':
             test_loglevel = 'test'
         else:
-            test_loglevel = 'info'
+            test_loglevel = 'debug'
             test_loghandler = 'openerp.tools.yaml_import:DEBUG'
     odoo_full = os.environ.get("ODOO_REPO", "odoo/odoo")
     server_path = get_server_path(odoo_full, odoo_branch or odoo_version,
